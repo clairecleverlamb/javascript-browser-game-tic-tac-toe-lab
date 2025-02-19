@@ -1,0 +1,75 @@
+body {
+    background-color: gainsboro;
+    /* Use a system font, if none are available use an available sans-sarif */
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rebeccapurple;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ff9900, 0 0 15px #ff6600;
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #f0dd8e, 0 0 10px #ff9900, 0 0 15px #ff6600;
+    }
+    100% {
+        text-shadow: 0 0 10px #e5a275, 0 0 20px #e25633, 0 0 30px #ff0000;
+    }
+}
+
+#message {
+    font-size: 1.5rem;
+    color: blueviolet;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 325px;
+    justify-content: center;
+}
+
+.sqr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: 3px solid black;
+    font-size: 64px;
+    text-align: center;
+    cursor: pointer;
+    background-color: beige;
+    transition: background-color 0.5s;
+}
+
+.sqr:hover {
+    background-color: khaki;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
